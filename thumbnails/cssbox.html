@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <style>
+    button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding:5px 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .stretch {
+      transition: padding 0.5s;
+    }
+    .stretch:hover {
+      padding: 10px 20px;
+    }
+
+    .one, .two, .three {
+      transition: margin 0.5s, padding 0.5s;
+    }
+
+    .one:hover, .two:hover, .three:hover {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <button class="stretch">Stretch</button>
+  <br><br><br><br><br>
+  <button class="one">One</button>
+  <button class="two">Two</button>
+  <button class="three">Three</button>
+</body>
+</html>
